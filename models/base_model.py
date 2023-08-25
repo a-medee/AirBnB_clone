@@ -48,8 +48,8 @@ class BaseModel:
         Returns:
             None
         """
-        to_be_returned = f"{[self.__class__.__name__]} " \
-                         f"({self.id}) {self.__dict__}"
+        to_be_returned = f"{[self.__class__.__name__]} "
+        f"({self.id}) {self.__dict__}"
         return to_be_returned
 
     def save(self):
